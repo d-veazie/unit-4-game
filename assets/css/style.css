@@ -1,0 +1,16 @@
+body {
+    background-image: url("//assets/images/DarkSide.jpg");
+}
+
+.jumbotron {
+    text-align: center; 
+    font-family: fantasy; 
+    color: black; 
+    text-shadow: -1px 0 yellow, 0 1px yellow, 1px 0 yellow, 0 -1px yellow; 
+    background-image: url("//assets/images/DarkSide.jpg");
+}
+
+img {
+    align-content: center;
+    padding: 10px;
+}
