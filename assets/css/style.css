@@ -1,16 +1,40 @@
 body {
-    background-image: url("//assets/images/DarkSide.jpg");
+   
 }
 
 .jumbotron {
-    text-align: center; 
+    text-align: left; 
     font-family: fantasy; 
     color: black; 
-    text-shadow: -1px 0 yellow, 0 1px yellow, 1px 0 yellow, 0 -1px yellow; 
-    background-image: url("//assets/images/DarkSide.jpg");
+    text-shadow: -1px 0 gold, 0 1px gold, 1px 0 gold, 0 -1px gold; 
+    background-image: url("../images/DarkSide.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 img {
     align-content: center;
     padding: 10px;
 }
+
+h2 {
+    text-align: right;
+}
+
+button {
+    float: right;
+}
+
+.footer {
+    background-color: black;
+    color: black; 
+    text-shadow: -1px 0 gold, 0 1px gold, 1px 0 gold, 0 -1px gold;
+    height: 50px;
+    text-align: center;
+    border-top: 4px solid gold;
+    border-bottom: 4px solid gold;
+    position: fixed;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
