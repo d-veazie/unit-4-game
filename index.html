@@ -4,46 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src = "./assets/js/game.js"></script>
     <link rel="stylesheet" href="../unit-4-game/assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
  
     <title>Star Wars</title>
 </head>
 <body>
-        <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                  <h1 class="display-4">Star Wars</h1>
-                  <h2 class="display-4">RPG</h2>
+    <div class="header">
+        <div class="container">
+                <div class="row padLeft">
+                    <h1 class="col-4">Star</h1>
+                    <h1 class="col-4">Wars</h1>
+                    <h1 class="col-4">RPG</h1>
+                    
                   
                 </div>
         </div>
+    </div> 
         
 
         <div class="container">
-                <div class="row">
-                  <div class="col-sm">
-                        <img src="./assets/images/darthMaul.png" class="rounded float-left" alt="Darth Maul">
-                    
+                <div class="row padLeft" id="imgRow">
+                  <div class="col-4 row1">
+                        <img src="./assets/images/darthMaul.png" class="rounded float-left card img-top" alt="Darth Maul" height="99px">
+                        <p class="name nameDM">Darth Maul</p>
+                        <p class="HP dmHP"></p>
                   </div>
-                  <div class="col-sm">
-                        <img src="./assets/images/Princess Leia920x920.jpg" class="rounded float-left" alt="Bikini Babe" height="220px">
-                        <div class="attack button">
-                                
+                  <div class="col-4 row1">
+                        <img src="./assets/images/Princess Leia920x920.jpg" class="rounded float-left card img-top" alt="Bikini Babe" height="120px">
+                        <p class="name namePL">Princess Leia</p>
+                        <p class="HP plHP"></p>
+                              
                         </div>
                   </div>
-                  <div class="col-sm">
-                        <img src="./assets/images/GG.jpg" class="rounded float-left" alt="General Greivous" height="230px">
-                        <button type="button" class="btn btn-warning">Attack!</button>
-                  </div>
+                  <div class="col-4 row1">
+                        <img src="./assets/images/GG.jpg" class="rounded float-left card img-top" id="gGreiv" alt="General Greivous" height="130px">
+                        <p class="name nameGG">General Greivous</p>
+                        <p class="HP ggHP"></p>
+                    </div>
                 </div>
         </div>
 
-        <footer class="footer">
+        <div class="row padLeft">
+            <div class="col-12" id="yourChar"></div>
+        </div>
+
+        <div class="row padLeft">
+            <div class="col-12">Enemies</div>
+        </div>
+        
+        <div class="row padLeft">
+            <div class="col-12 move" id="enemy1"></div>
+            <div class="col-12 move" id="enemy2"></div>
+            <div class="col-12 move" id="enemy3"></div>
+        </div>
+
+        <div class="row padLeft">
+            <div class="col-12">
+                <p>Battle Grounds</p>
+            </div>
+        </div>
+
+        <div class="row padLeft">
+            <div class="col-12 atkBtn">
+                    <button type="button" class="btn btn-warning">Attack!</button>
+            </div>
+        </div>
+
+        <div class="row padLeft">
+            <div class="col-12">
+                <p>Defender</p>
+            </div>
+        </div>
+
+        <div class="row padLeft">
+            <div class="col-12" id="defender"></div>
+        </div>
+        
+        <div class="row padLeft">
+            <div class="col-12">
+                <br>
+                <p class = "youAttacked"></p>
+                <p class = "retaliation"></p>
+                <p class = "youDefeated"></p>
+                <p class = "youWon"></p>
+                <p class = "youLose"></p>
+                <p class = "noEnemy"></p>
+            </div>
+        </div>
+
+        <div class="row padLeft">
+            <div class="col-12">
+                    <button type="button" class="btn btn-danger">Restart</button>
+            </div>
+        </div>
+
+     <!--  <footer class="footer">
             
                 <span class="footertext">
                 <h1>© 2019 Veazie Visions</h1>
                 </span>
             
-         </footer>
+         </footer> -->  
 </body>
 </html>

@@ -2,24 +2,30 @@ body {
    
 }
 
-.jumbotron {
+.name {
+   font-family: cursive;
+}
+.header {
     text-align: left; 
     font-family: fantasy; 
     color: black; 
     text-shadow: -1px 0 gold, 0 1px gold, 1px 0 gold, 0 -1px gold; 
     background-image: url("../images/DarkSide.jpg");
-    background-repeat: no-repeat;
+    background-size: 30%;
     background-position: center;
+}
+
+.padLeft {
+    padding: 20px;
+    padding-top: 20px;
 }
 
 img {
     align-content: center;
-    padding: 10px;
+    
 }
 
-h2 {
-    text-align: right;
-}
+
 
 button {
     float: right;
